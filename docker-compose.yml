@@ -4,5 +4,5 @@ services:
       context: .
     volumes:
       - "./npm_packages_downloaded:/npm_packages_downloaded"
-      - "./package.json:/home/node/app/package.json"
+      - "./package.json:/home/node/app/package.json:ro"
       - "./script_dependencies.py:/script_dependencies.py"
